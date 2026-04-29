@@ -1,0 +1,7 @@
+{
+  "name": "BookCampus",
+  "description": "A high-fidelity campus second-hand book trading platform featuring identity verification, real-time bargaining, and safe face-to-face transaction scheduling.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

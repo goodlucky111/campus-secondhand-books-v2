@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BookCampus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00a870',
+                        secondary: '#f59e0b',
+                        background: '#f5f8f7',
+                        'card-bg': '#ffffff',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans SC', 'PingFang SC', 'sans-serif'],
+                        display: ['Lexend', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'ios': '0 4px 12px rgba(0,0,0,0.05)',
+                        'ios-lg': '0 8px 24px rgba(0,0,0,0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            -webkit-tap-highlight-color: transparent;
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f5f8f7;
+            overscroll-behavior-y: contain;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+        .ios-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<script type="module" src="/index.tsx"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
